@@ -20,8 +20,9 @@
         },
         save:function() { 
             var model = $('#userForm').serializeObject();
-			this._renderEdit2();
-            //alert('saved model: '+JSON.stringify(model));
+			//this._renderEdit2();
+			var aleatorio = Math.floor(Math.random() * 51) + 25;
+            alert('saved model: '+JSON.stringify(model)+' Num' +aleatorio);
         },
         cancel: function(){
             alert('Cancel');
