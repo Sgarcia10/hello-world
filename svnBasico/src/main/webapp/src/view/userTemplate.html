@@ -1,0 +1,38 @@
+<script type='text/template' id='user'>
+    <div class='form-group'>
+        <form role='form' id='userForm'>
+ 
+            <div class='form-group' >
+                <label for='firstName'>Nombres</label>
+                <input type='text' class='form-control' id='firstName' name='firstName' placeholder='Enter value' value='<%= user.get('firstName') %>'/>	
+            </div>
+ 
+            <div class='form-group' >
+                <label for='lastName'>Apellidos</label>
+                <input type='text' class='form-control' id='lastName' name='lastName' placeholder='Enter value' value='<%= user.get('lastName') %>'/>	
+            </div>
+    
+            <div class='form-group'>
+                <label for='bornDate'>Fecha de Nacimiento</label>
+                <input type='text' class='form-control' value='02-16-2012' id="bornDate" name='bornDate'>
+            </div>
+			
+			<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+			
+			<script>
+				$(function () {
+				$('#bornDate').datepicker();
+				});
+			</script>
+									
+            <a onclick="Backbone.trigger('user-save'); return false" >Guardar</a> |
+            <a onclick="Backbone.trigger('user-cancel'); return false" >Cancelar</a> |
+        </form>
+    </div>
+</script>
+
+<script type='text/template' id='user2'>
+HOLAAAAAAAAAA
+</script>
